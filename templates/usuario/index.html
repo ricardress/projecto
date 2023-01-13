@@ -1,0 +1,23 @@
+{% extends 'layout/base.html' %}
+
+{% block 'title' %}Usuarios{% endblock %}
+
+{% block 'content' %}
+    <h1>Usuarios</h1>
+    
+    {% include 'usuario/partials/search.html' %}
+    {% include 'usuario/partials/by_initial.html' %}
+
+    <span class="btn-Aux"><a href="{% url 'usuario' %}">Ver Todos</a><a href="{% url 'usuario_create' %}">Agregar</a></span>
+    <ul class='list'>
+        {% for usuario in usuarios %}
+            <li>{{ usuario }}
+                <span>
+                    <a href="{% url 'usuario_view' id=usuario.id %}" class="btn btn-Ver">Ver</a>
+                    <a href="{% url 'usuario_edit' id=usuario.id %}" class="btn btn-Editar">Editar</a>
+                    <a href="{% url 'usuario_delete' id=usuario.id %}" class="btn btn-Borrar">Borrar</a>
+                </span>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock  %}

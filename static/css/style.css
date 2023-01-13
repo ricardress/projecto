@@ -1,0 +1,149 @@
+:root{
+    --color-primary: #38A8E5;
+    --color-text: #4e4d4d;
+    --font-main: CaviarDreams;
+    --font-text: CaviarDreams_Bold;
+}
+/*Main settings*/
+@font-face{
+    font-family: CaviarDreams;
+    src: url('../fonts/CaviarDreams.ttf');
+}
+@font-face{
+    font-family: CaviarDreams_Bold;
+    src: url('../fonts/CaviarDreams_Bold.ttf');
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-main);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    color: var(--color-text);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color:var(--color-primary);
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+ }
+ nav ul li a{
+     text-decoration: none;
+     color: white;
+     text-transform: uppercase;
+     padding: 20px;
+ }
+ nav ul li a:hover{
+    color: var(--color-text);
+ }
+ main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 50px;
+    justify-content: flex-start;
+    align-items: center;
+ }
+ .list{
+    display: flex;
+    border: 1px solid var(--color-text);
+    width: 50%;
+    list-style-type: none;
+    flex-direction: column;
+ }
+ .list li{
+    padding: 15px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .btn{
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+ }
+ .btn:hover{
+    background-color: white;
+    color: var(--color-primary)
+ }
+ .btn-Ver{
+    background-color: var(--color-primary);
+    color: white;
+ }
+ .btn-Editar{
+    background-color: rgb(172, 172, 66);
+    color: white;
+ }
+ .btn-Borrar{
+    background-color: rgb(180, 58, 58);
+    color: white;
+ }
+ .search{
+    margin: 20px;
+    width: 50%;
+ }
+ .barra-Buscar{
+    padding: 5px;
+    width: 80%;
+ }
+ .btn-Buscar{
+    width: 19%;
+    background-color: var(--color-primary);
+    color: white;
+    outline: none;
+    border: 0;
+    box-shadow: 0;
+ }
+ .btn-Buscar:hover{
+    background-color:#032c42;
+    color: white;
+ }
+ .btn-Aux{
+   width: 50%;
+   display: flex;
+   justify-content: flex-start;
+   margin: 10px;
+ }
+ .btn-Aux a{
+   padding: 10px;
+   text-decoration: none;
+ }
+.success{
+   width: 100%;
+   padding: 10px;
+   background-color: #032c42;
+   color: white;
+}
+/*INDEX*/
+.cards{
+   display: flex;
+   justify-content: space-around;
+}
+.card{
+   width: 150px;
+   height: 150px;
+   margin: 50px;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   color: white;
+   background-color: var(--color-primary);
+}
+.cards a:hover{
+   background-color: var(--color-text);
+}

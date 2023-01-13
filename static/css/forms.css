@@ -1,0 +1,30 @@
+input{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--color-text);
+    padding: 4px;
+    width: 100%;
+}
+.btn-Enviar{
+    width: 80%;
+    background-color: var(--color-primary);
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-Aux-forms{
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    margin: 10px;
+  }
+  .btn-Aux-forms a{
+    padding: 10px;
+    text-decoration: none;
+  }
