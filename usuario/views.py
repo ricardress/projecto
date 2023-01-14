@@ -1,4 +1,4 @@
-from asyncio.windows_events import NULL
+'''from asyncio.windows_events import NULL
 from django.contrib import messages
 from django.shortcuts import render,redirect
 from .models import Usuario
@@ -69,5 +69,5 @@ def create(request):
 def delete(request, id):
     usuarios = Usuario.objects.get(id=id)
     usuarios.delete()
-    return redirect('usuario')
+    return redirect('usuario')'''
 

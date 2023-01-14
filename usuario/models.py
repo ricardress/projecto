@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import date
 
+
 class Usuario(models.Model):
     nombre = models.CharField(max_length=50, blank=False, null=False)
     apellido = models.CharField(max_length=50, blank=False, null=False)
