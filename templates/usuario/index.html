@@ -1,12 +1,13 @@
-{% extends 'layout/base.html' %}
-
-{% block 'title' %}Usuarios{% endblock %}
-
-{% block 'content' %}
-    <h1>Usuarios</h1>
-    
-    {% include 'usuario/partials/search.html' %}
-    {% include 'usuario/partials/by_initial.html' %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
 
     <span class="btn-Aux"><a href="{% url 'usuario' %}">Ver Todos</a><a href="{% url 'usuario_create' %}">Agregar</a></span>
     <ul class='list'>
@@ -20,4 +21,6 @@
             </li>
         {% endfor %}
     </ul>
-{% endblock  %}
+
+</body>
+</html>
