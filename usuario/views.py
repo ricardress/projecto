@@ -1,4 +1,4 @@
-'''from asyncio.windows_events import NULL
+from asyncio.windows_events import NULL
 from django.contrib import messages
 from django.shortcuts import render,redirect
 from .models import Usuario
@@ -17,7 +17,7 @@ def index(request, letter=NULL):
 
     return render(request, 'usuario/index.html', context)
 
-
+'''
 def view(request, id):
     usuarios = Usuario.objects.get(id=id)
 
