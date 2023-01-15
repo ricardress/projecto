@@ -1,32 +1,8 @@
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-
-        <h1>Usuarios</h1>
-
-
-    <span class="btn-Aux"><a href=# >Ver Todos</a><a href=#>Agregar</a></span>
-    <ul class='list'>
-        {% for usuario in usuarios %}
-            <li>{{ usuario }}
-                <span>
-                    <a href=# class="btn btn-Ver">Ver</a>
-                    <a href=# class="btn btn-Editar">Editar</a>
-                    <a href=# class="btn btn-Borrar">Borrar</a>
-                </span>
-            </li>
-        {% endfor %}
-    </ul>
-
-</body>
-</html>
-
-
-
+{% extends 'layout/base.html' %}
+{% block 'title' %}Inicio{% endblock %}
+{% block 'content' %}
+  <h1>Bienvenido a tu gestor personal</h1>
+    <div class="cards">
+            <a href="{% url 'usuario' %}" class="card">USUARIO</a>
+    </div>
+{% endblock %}
