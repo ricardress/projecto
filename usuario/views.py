@@ -4,7 +4,6 @@ from django.shortcuts import render,redirect
 from .models import Usuario
 from .forms import UsuarioForm
 
-'''
 def index(request, letter=NULL):
     if letter != NULL:
         usuarios = Usuario.objects.filter(nombre__istartswith=letter)
@@ -69,5 +68,5 @@ def create(request):
 def delete(request, id):
     usuarios = Usuario.objects.get(id=id)
     usuarios.delete()
-    return redirect('usuario')'''
+    return redirect('usuario')
 
