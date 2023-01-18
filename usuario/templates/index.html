@@ -1,0 +1,8 @@
+{% extends 'layout/base.html' %}
+{% block 'title' %}Inicio{% endblock %}
+{% block 'content' %}
+  <h1>Bienvenido a tu gestor personal</h1>
+    <div class="cards">
+            <a href="{% url 'usuario' %}" class="card">USUARIO</a>
+    </div>
+{% endblock %}
