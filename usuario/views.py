@@ -1,6 +1,9 @@
-from asyncio.windows_events import NULL
+
+#from asyncio.windows_events import NULL
 from django.contrib import messages
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
+from psycopg2.sql import NULL
+
 from .models import Usuario
 from .forms import UsuarioForm
 
